@@ -9,7 +9,7 @@ const AutoPlayVideo = () => {
     }, []); // Empty dependency array ensures that the effect runs only once
 
     return (
-        <video ref={videoRef} loop autoPlay muted playsInline >
+        <video ref={videoRef} autoPlay loop muted playsinline>
             <source src={`/video/dalysmedia.mp4`} type="video/mp4" />
             <source src={`/video/dalysmedia.webm`} type="video/webm" />
             Your browser does not support the video tag.
