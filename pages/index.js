@@ -1,7 +1,9 @@
+
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
+import AutoPlayVideo from "../components/autoPlay.js" 
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -41,17 +43,13 @@ export default function Home() {
           />
         </div>
         <div className={styles.video}>
+          <AutoPlayVideo />
 
-          <video width="640" height="360" loop autoPlay muted >
-            <source src={`/video/dalysmedia.mp4`} type="video/mp4" />
-            <source src={`/video/dalysmedia.webm`} type="video/webm" />
-            Your browser does not support the video tag.
-          </video>
         </div>
 
         <div className={styles.grid}>
           <a
-           
+
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
@@ -64,7 +62,7 @@ export default function Home() {
             </p>
           </a>
 
-
+ 
         </div>
       </main>
     </>
