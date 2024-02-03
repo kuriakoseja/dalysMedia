@@ -44,6 +44,7 @@ export default function Home() {
 
           <video width="640" height="360" loop autoPlay muted >
             <source src={`/video/dalysmedia.mp4`} type="video/mp4" />
+            <source src={`/video/dalysmedia.webm`} type="video/webm" />
             Your browser does not support the video tag.
           </video>
         </div>
